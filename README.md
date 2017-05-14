@@ -13,7 +13,7 @@ Here is edit link https://codepen.io/man-x/pen/VpoWOQ/
 
 For using Marvel API on front end client I added code pen domain in marvel developer account.
 
-On development version I used encrypted keys both public and private to call api. Private key should only be used on server side, that's why I removed it when published on codepen. This task is done using npm, gulp task runner, SASS, jQuery. Here is repository of development version
+On development version I used encrypted keys both public and private to call api. Private key should only be used on server side, that's why I removed it when published on codepen. This task is done using npm, gulp task runner, SASS, jQuery.
 
 
 To start development project
