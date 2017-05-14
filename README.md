@@ -15,7 +15,6 @@ For using Marvel API on front end client I added code pen domain in marvel devel
 
 On development version I used encrypted keys both public and private to call api. Private key should only be used on server side, that's why I removed it when published on codepen. This task is done using npm, gulp task runner, SASS, jQuery. Here is repository of development version
 
-https://www.dropbox.com/s/j0zbki6xeycp0xv/promoteint.zip?dl=0
 
 To start development project
 
