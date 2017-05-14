@@ -1,0 +1,154 @@
+/**
+ * Author:         Mansoor Munib
+ * Version:        1.0.0
+ */
+
+/* Add Custom CSS after this line */
+
+@import 'settings';
+@import 'normalize';
+@import 'responsive';
+
+/* General */
+
+html {
+
+    font-size:53%;
+    @include large-up() {
+       font-size: 62.5%;
+    }
+}
+body {
+  font-family: $font-primary;
+  color: $primary-color;
+  font-size: 16px;
+
+  @include large-up() {
+    font-size: 18px;
+  }
+
+}
+
+h1{
+    font-size: 56px;
+    font-size: 5.6rem;
+    text-align: center;
+    color: #ffffff;
+    text-transform: uppercase;
+    background: $red;
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0px;
+}
+h2{
+    font-size: 3.0rem;
+    font-weight: $weight-normal;
+    text-transform: uppercase;
+}
+h3{
+    font-size: 2.2rem;
+    font-weight: $weight-normal;
+}
+h4{
+    font-size: 1.8rem;
+    font-weight: $weight-normal;
+    text-align: center;
+    min-height: 50px;
+}
+
+.title{
+    line-height: 1em;
+    position: relative;
+    letter-spacing: -1px;
+    font-size: 25px;
+    text-transform: uppercase;
+    margin: 0 0 30px 0;
+
+    &:before{
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 100%;
+        height: 77%;
+        background: black;
+        width: 1000px;
+        -webkit-transform: skew(-11deg, 0deg);
+        -ms-transform: skew(-11deg, 0deg);
+        transform: skew(-11deg, 0deg);
+        margin: 3px 12px 0 0;
+    }
+}
+
+.clearLeft{
+    clear: left;
+}
+
+.attributionText{
+    font-size: 13px;
+}
+
+section{
+    margin: 0;
+    padding: 0;
+    color: #000;
+    position: relative;
+    overflow: visible;
+
+
+    &:before {
+        content: "";
+        width: 100%;
+        height: 10px;
+        background: transparent url("data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyRpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYxIDY0LjE0MDk0OSwgMjAxMC8xMi8wNy0xMDo1NzowMSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNS4xIE1hY2ludG9zaCIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDoxQjRDM0U4QjQwOEQxMUUyQTNFMjhBQTg1N0E1NzM2NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDoxQjRDM0U4QzQwOEQxMUUyQTNFMjhBQTg1N0E1NzM2NyI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkYwOUE5MDIyNDA4NDExRTJBM0UyOEFBODU3QTU3MzY3IiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjFCNEMzRThBNDA4RDExRTJBM0UyOEFBODU3QTU3MzY3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+gD7dPAAAABFJREFUeNpiYMAEHrQQAAgwAEghAWlBEU+XAAAAAElFTkSuQmCC");
+        display: block;
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
+}
+
+a{
+  color: #ffffff;
+  text-decoration: none;
+}
+
+#overlay {
+    background: #eee;
+    color: #666666;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    z-index: 5000;
+    top: 0;
+    left: 0;
+    float: left;
+    text-align: center;
+    padding-top: 20%;
+}
+
+.circleImg {
+    @include border-radius(50%);
+    border: 4px solid #000;
+    overflow: hidden;
+}
+.mainImg img{
+    width: 100%;
+}
+
+
+footer{
+    background: $grey;
+    padding: 40px 0px;
+    font-weight: $weight-light;
+
+    a{
+        text-decoration: none;
+        color: $primary-color;
+    }
+    .pull-right{
+        @include small() {
+        float: left !important;
+        margin-top: 10px;
+        }
+    }
+
+}
